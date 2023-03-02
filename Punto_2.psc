@@ -1,23 +1,27 @@
-Proceso cicloMientrasHacer
-		Definir fila,espacios,asterisco Como Entero;
-		fila <- 0; espacios <- 0; asterisco <- 10;
-		
-		Mientras fila < 10 Hacer
-			
-			espacios <- fila;
-			Mientras espacios < 9 Hacer
-				espacios <- espacios+1;
-				Escribir ' ' Sin Saltar;
-			FinMientras
-			
-			asterisco <- fila+1;
-			Mientras asterisco > 0 Hacer
-				asterisco <- asterisco-1;
-				Escribir '*' Sin Saltar;
-			FinMientras
-			
-			fila <- fila+1;
-			Escribir '';
-		FinMientras
+Proceso vectoresAzar
+	Definir vector, vectorTemporal, contador Como Entero;
+	Dimension vector[20]; Dimension vectorTemporal[20];
+	
+	Para contador<-0 Hasta 19 Con Paso 1 Hacer
+		vector[contador] <- azar(101);
+		Escribir Sin Saltar vector[contador],' ';
+		vectorTemporal[contador] <- (vector[contador]) MOD 2;
+		Escribir vectorTemporal[contador];
+	FinPara
+	
+	Escribir Sin Saltar 'Número pares: ';
+	Para contador<-0 Hasta 19 Con Paso 1 Hacer
+		si vectorTemporal[contador] = 0 Entonces
+			Escribir Sin Saltar vector[contador],', ';
+		FinSi
+	FinPara
+	Escribir '';
+	
+	Escribir Sin Saltar 'Número impares: ';
+	Para contador<-0 Hasta 19 Con Paso 1 Hacer
+		si vectorTemporal[contador] = 1 Entonces
+			Escribir Sin Saltar vector[contador],', ';
+		FinSi
+	FinPara
+	Escribir '';
 FinProceso
-

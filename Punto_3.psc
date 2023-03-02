@@ -17,7 +17,7 @@ Proceso nombre_apellidos_padre_madre
 	Leer nombreMadre;
 	Escribir "¿Digite apellidos de la Madre?";
 	Leer apellidosMadre;
-	Limpiar Pantalla;
+	Limpiar Pantalla; 
 	
 	Escribir "Yo ", nombre," ", apellidos,' soy hijo de ',nombreMadre,' y ',nombrePadre;
 FinProceso

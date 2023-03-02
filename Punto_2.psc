@@ -15,7 +15,7 @@ Proceso nombre_apellidos_edad_estatura
 	Escribir "¿Digite su estatura?";
 	Leer estatura;
 	
-	Limpiar Pantalla;
+	Limpiar Pantalla; 
 	
 	Escribir "Bienvenido ", nombre," ", apellidos,' tiene una de ',edad,' con estatura de ',estatura;
 FinProceso

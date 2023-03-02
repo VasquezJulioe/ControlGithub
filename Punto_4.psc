@@ -4,7 +4,7 @@ Proceso capitalPais
 	Escribir "¿Digite el pais?";
 	Leer pais;
 	Escribir "¿Digite la capital?";
-	Leer capital;
+	Leer capital; 
 	
 	Escribir 'La ciudad ',capital,', es la capital del pais ',pais;
 FinProceso

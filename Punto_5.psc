@@ -10,7 +10,7 @@ Proceso mascota
 	Escribir "¿Digite edad de la mascota?";
 	Leer edadMascota;
 	Escribir "¿Digite su nombre completo?";
-	Leer nombrePropietario;
+	Leer nombrePropietario; 
 	
 	Escribir nombreMascota,' es un(a) ',tipoMascota,' el cual, tiene ',edadMascota,' años de edad y ',nombrePropietario,' es actualmente su dueño(a).';
 FinProceso

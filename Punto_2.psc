@@ -1,12 +1,23 @@
-Proceso menorEdad
-	Definir edad Como Entero;
-	
-	Escribir "¿Cual es su edad?";
-	leer edad;
-	
-	si edad < 18 Entonces
-		Escribir "Usted aún es un niño(a).";
-	SiNo
-		Escribir "Usted ya es un(a) adulto(a).";
-	FinSi
+Proceso cicloMientrasHacer
+		Definir fila,espacios,asterisco Como Entero;
+		fila <- 0; espacios <- 0; asterisco <- 10;
+		
+		Mientras fila < 10 Hacer
+			
+			espacios <- fila;
+			Mientras espacios < 9 Hacer
+				espacios <- espacios+1;
+				Escribir ' ' Sin Saltar;
+			FinMientras
+			
+			asterisco <- fila+1;
+			Mientras asterisco > 0 Hacer
+				asterisco <- asterisco-1;
+				Escribir '*' Sin Saltar;
+			FinMientras
+			
+			fila <- fila+1;
+			Escribir '';
+		FinMientras
 FinProceso
+

@@ -1,14 +1,9 @@
-Proceso mayorEdad
-	
-	Definir edad Como Entero;
-	
-	Escribir "¿Cual es su edad?";
-	leer edad;
-	
-	si edad >= 18 Entonces
-		Escribir "Usted es mayor de edad.";
-	SiNo
-		Escribir "Usted es menor de edad.";
-	FinSi
-	
+Proceso cicloPara
+	Definir fila,columna Como Entero;
+	Para fila <- 1 Hasta 10 Con Paso 1 Hacer
+		Para columna <- 1 Hasta fila Con Paso 1 Hacer
+			Escribir "*" Sin Saltar;
+		FinPara
+		Escribir "";
+	FinPara
 FinProceso

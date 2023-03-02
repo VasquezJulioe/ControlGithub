@@ -1,14 +1,14 @@
-Proceso nombre_apellidos
-	Definir nombre Como Caracter;
-	Definir apellidos Como Caracter;
+Proceso mayorEdad
 	
-	Escribir "ï¿½Digite su nombre?";
-	Leer nombre;
+	Definir edad Como Entero;
 	
-	Escribir "ï¿½Digite sus apellidos?";
-	Leer apellidos;
+	Escribir "¿Cual es su edad?";
+	leer edad;
 	
-	Limpiar Pantalla;
+	si edad >= 18 Entonces
+		Escribir "Usted es mayor de edad.";
+	SiNo
+		Escribir "Usted es menor de edad.";
+	FinSi
 	
-	Escribir "Bienvenido ", nombre," ", apellidos;
-FinProceso 
+FinProceso

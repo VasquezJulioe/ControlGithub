@@ -1,21 +1,12 @@
-Proceso nombre_apellidos_edad_estatura
-	Definir nombre,apellidos Como Caracter;
+Proceso menorEdad
 	Definir edad Como Entero;
-	Definir estatura Como Real;
 	
-	Escribir "¿Digite su nombre?";
-	Leer nombre;
+	Escribir "¿Cual es su edad?";
+	leer edad;
 	
-	Escribir "¿Digite sus apellidos?";
-	Leer apellidos;
-	
-	Escribir "¿Digite su edad?";
-	Leer edad;
-	
-	Escribir "¿Digite su estatura?";
-	Leer estatura;
-	
-	Limpiar Pantalla;
-	
-	Escribir "Bienvenido ", nombre," ", apellidos,' tiene una de ',edad,' con estatura de ',estatura;
+	si edad < 18 Entonces
+		Escribir "Usted aún es un niño(a).";
+	SiNo
+		Escribir "Usted ya es un(a) adulto(a).";
+	FinSi
 FinProceso

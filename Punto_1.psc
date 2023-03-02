@@ -1,7 +1,7 @@
 Proceso nombre_apellidos
 	Definir nombre Como Caracter;
 	Definir apellidos Como Caracter;
-	
+	//Pide el nombre
 	Escribir "�Digite su nombre?";
 	Leer nombre;
 	
